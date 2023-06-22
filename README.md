@@ -110,7 +110,7 @@ You can deploy this project using: **Not available**.
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Shubham Bhoyar**
+👤 **Jean Jacques Buhendwa**
 
 - GitHub: [@jeanbuhendwa](https://github.com/jeanbuhendwa)
 
