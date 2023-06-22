@@ -1,0 +1,18 @@
+postgresql: &postgresql
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *postgresql
+  database: blog_app_development
+
+test:
+  <<: *postgresql
+  database: blog_app_test
+
+production:
+  <<: *postgresql
+  database: blog_app_production
