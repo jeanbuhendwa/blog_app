@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'faker'
 
 RSpec.describe 'Users', type: :request do
   describe 'GET /users' do
@@ -17,6 +18,20 @@ RSpec.describe 'Users', type: :request do
     it 'should render correct template' do
       get users_path
       expect(response).to render_template('index')
+    end
+  end
+
+  describe 'GET /users/:id' do
+    let(:user) { User.create(name: 'John Doe', email: Faker::Internet.unique.email) }
+
+    it 'should respond with success' do
+      get user_path(user)
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'should render correct template' do
+      get user_path(user)
+      expect(response).to render_template('show')
     end
   end
 end
