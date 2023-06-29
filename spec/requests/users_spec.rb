@@ -33,5 +33,10 @@ RSpec.describe 'Users', type: :request do
       get user_path(user)
       expect(response).to render_template('show')
     end
+
+    it 'should include the correct placeholder text' do
+      get user_path(user)
+      expect(response.body).to include('User details')
+    end
   end
 end
