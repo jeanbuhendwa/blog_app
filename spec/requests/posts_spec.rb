@@ -34,5 +34,8 @@ RSpec.describe 'Posts', type: :request do
     it 'include the details of a post' do
       expect(response.body).to include('Post')
     end
+    it 'includes the correct placeholder text' do
+      expect(response.body).to include('User Post Details')
+    end
   end
 end
