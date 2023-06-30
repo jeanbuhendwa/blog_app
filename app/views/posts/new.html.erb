@@ -1,4 +1,4 @@
-<%= form_with model:@post, html: { class: 'post-form'} do |form|%>
+<%= form_with(model: @post, url: user_posts_path, method: :post) do |form| %>
     <h1>Create Post</h1>
     <%=form.label :title%>
     <%=form.text_field :title, class: 'post-text-field'%>
