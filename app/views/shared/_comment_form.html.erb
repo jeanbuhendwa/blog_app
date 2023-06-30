@@ -1,0 +1,7 @@
+<%= form_with model:([post, comment]), html: { class: 'comment-form'} do |form|%>
+    <%=form.label "Enter Comment", class: 'comment-field-label'%>
+    <%= link_to user, class: 'user-card-body' do %>
+        <h2><%= user.name %></h2>
+      <div class='user-post-count'>Number of posts: <%= user.post_counter %></div>
+    <% end %>
+    </div>
