@@ -1,5 +1,6 @@
 <%= render 'shared/user', user: @user%>
  <div class='user-bio'><%=@user.bio%></div>
+ <div class='post-btn-container'><%= link_to "Create Post", new_user_post_path(@current_user), class: 'common-btn' %></div>
  <ul class='user-card-post-ul'>
  <% if @user.top_3_posts.empty? %>
    <p class='post-card-no-click'>No posts</p>
