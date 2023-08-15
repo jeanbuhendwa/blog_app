@@ -108,7 +108,7 @@ You can deploy this project using: **Not available**.
 
  <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Jean Jacques Buhendwa**
 
